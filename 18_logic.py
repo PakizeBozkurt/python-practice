@@ -9,3 +9,14 @@ def a_and_b(a, b):
 
 print("")
 print("Function: a_and_b")
+
+
+def not_a(a):
+   return not (a)
+
+
+# check_that_these_are_equal(not_a(True), False)
+# check_that_these_are_equal(not_a(False), True)
+
+print("")
+print("Function: not_a")
