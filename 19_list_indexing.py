@@ -37,3 +37,27 @@ def get_last_item(the_list):
 
 print("")
 print("Function: get_last_item")
+
+
+#####
+
+
+
+def get_items_between_one_and_three(the_list):
+  # Return the section of the list between indexes one
+  # and three
+  return the_list[1:3]
+
+
+# check_that_these_are_equal(
+#     get_items_between_one_and_three(["a", "b", "c", "d", "e"]),
+#     ["b", "c"]
+# )
+
+# check_that_these_are_equal(
+#     get_items_between_one_and_three([34, 44, 54, 64]),
+#     [44, 54]
+# )
+
+print("")
+print("Function: get_items_between_one_and_three")
