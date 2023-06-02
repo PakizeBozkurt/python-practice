@@ -59,3 +59,21 @@ def reverse_list(the_list):
 #     reverse_list(['a', 'b', 'c']), ['c', 'b', 'a'])
 # check_that_these_are_equal(
 #     reverse_list([33, 44, 55]), [55, 44, 33])
+
+
+#####
+
+print("")
+print("Function: list_length")
+
+# Note — it's the same as for strings!
+
+
+def list_length(the_list):
+  return len(the_list)
+
+
+# check_that_these_are_equal(
+#     list_length(['a', 'b', 'c']), 3)
+# check_that_these_are_equal(
+#     list_length([33, 44]), 2)
