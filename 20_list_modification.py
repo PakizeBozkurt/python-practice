@@ -26,3 +26,19 @@ def count_items_in_list(the_list, item):
 #     count_items_in_list(['a', 'b', 'a'], 'a'), 2)
 # check_that_these_are_equal(
 #     count_items_in_list([4, 1, 4, 4], 4), 3)
+
+
+###
+
+print("")
+print("Function: get_index_of_item")
+
+
+def get_index_of_item(the_list, item):
+  return the_list.index(item)
+
+
+# check_that_these_are_equal(
+#     get_index_of_item(['a', 'b', 'c'], 'b'), 1)
+# check_that_these_are_equal(
+#     get_index_of_item([33, 44, 55], 55), 2)
