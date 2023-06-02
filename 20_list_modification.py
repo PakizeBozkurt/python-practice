@@ -42,3 +42,20 @@ def get_index_of_item(the_list, item):
 #     get_index_of_item(['a', 'b', 'c'], 'b'), 1)
 # check_that_these_are_equal(
 #     get_index_of_item([33, 44, 55], 55), 2)
+
+
+####
+
+print("")
+print("Function: reverse_list")
+
+
+def reverse_list(the_list):
+  the_list.reverse()
+  return the_list
+
+
+# check_that_these_are_equal(
+#     reverse_list(['a', 'b', 'c']), ['c', 'b', 'a'])
+# check_that_these_are_equal(
+#     reverse_list([33, 44, 55]), [55, 44, 33])
