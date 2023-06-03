@@ -16,3 +16,12 @@ def print_numbers_in_range_with_a_while():
 
 
 print_numbers_in_range_with_a_while()
+
+# * Summarising: Using a loop to distil a list into one
+#   value.
+
+# * Mapping: Using a loop to convert each item to another
+#   item.
+
+# * Filtering: Using a loop to pick out only some items from
+#   a list.
