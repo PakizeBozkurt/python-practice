@@ -38,6 +38,27 @@ def convert_negatives_to_positives(numbers):
 # how frequently each number shows up
 
 
+def calc_frequency_of_numbers(numbers):
+  number_frequency = {}
+  for number in numbers:
+    if number not in number_frequency:
+      number_frequency[number] = 1
+    else:
+      number_frequency[number] += 1
+  return number_frequency
+
+# Here we'll use summarising and mapping in the same loop to
+# format the graph.
+
+
+def format_graph(number_frequency):
+  graph = ""
+  for number in number_frequency:
+    # Note the cool use of 'string multiplication' here!
+    # 'x' * 3 will give you 'xxx'
+    graph += f"{number}: {'x' * number_frequency[number]}\n"
+  return graph
+
 
 
 print("Final graph:")
