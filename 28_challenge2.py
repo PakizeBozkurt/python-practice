@@ -39,6 +39,24 @@ print(extract_long_words([
     'antidisestablishmentarianism'
 ]))
 
+def reject_hyphen_words(words):
+    unhyphenated_words = []
+    for word in words:
+        if "-" not in word:
+            unhyphenated_words.append(word)
+    return unhyphenated_words
+
+
+print(reject_hyphen_words([
+    'hello',
+    'nonbiological',
+    'Kay',
+    'this-is-a-long-word',
+    'antidisestablishmentarianism'
+]))
+
+
+
    
 print("")
 print("Function: report_long_words")
