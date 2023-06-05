@@ -14,3 +14,15 @@
 # ]
 # then the output should be:
 # "These words are quite long: nonbiological, antidisestablis..."
+
+
+def report_long_words(words):
+  long_words = extract_long_words(words)
+  no_hyphens = reject_hyphens_words(long_words)
+  short_if_longer = short_very_long_words(no_hyphens)
+  return format_long_word_report(short_if_longer)
+
+  print("")
+
+
+print("Function: report_long_words")
