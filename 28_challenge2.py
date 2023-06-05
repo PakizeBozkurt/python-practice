@@ -17,21 +17,25 @@
 
 
 def report_long_words(words):
-  long_words = extract_long_words(words)
-  no_hyphens = reject_hyphens_words(long_words)
-  short_if_longer = short_very_long_words(no_hyphens)
-  return format_long_word_report(short_if_longer)
+  #Filter in the words that are 10 characters long
+  long_words = extract_long_unhyphenated_words(words)
+  #Filter out those that contain hyphens
+#   without_hyphens = reject_hyphenated_words(long_words)
+  #Map the ones thatover 15 characters to the shortened
+  shortened_if_longer = shorten_very_long_words(long_words)
+  #Summarise to a string report
+  return format_long_word_report(shortened_if_longer)
 
 
-def extract_long_words(words):
+def extract_long_unhyphenated_words(words):
   long_words = []
   for word in words:
-    if len(word) > 10:
+    if len(word) > 10 and "-" not in word:
       long_words.append(word)
     return long_words
 
 
-print(extract_long_words([
+print(extract_long_unhyphenated_words([
     'hello',
     'nonbiological',
     'Kay',
@@ -39,23 +43,23 @@ print(extract_long_words([
     'antidisestablishmentarianism'
 ]))
 
-def reject_hyphens_words(words):
-    unhyphenated_words = []
-    for word in words:
-        if "-" not in word:
-            unhyphenated_words.append(word)
-    return unhyphenated_words
+# def reject_hyphenated_words(words):
+#     long_words = []
+#     for word in words:
+#         if "-" not in word:
+#             long_words.append(word)
+#     return long_words
 
 
-print(reject_hyphens_words([
-    'hello',
-    'nonbiological',
-    'Kay',
-    'this-is-a-long-word',
-    'antidisestablishmentarianism'
-]))
+# print(reject_hyphenated_words([
+#     'hello',
+#     'nonbiological',
+#     'Kay',
+#     'this-is-a-long-word',
+#     'antidisestablishmentarianism'
+# ]))
 
-def short_very_long_words(no_hyphens):
+def shorten_very_long_words(words):
     processed_words = []
     for word in words:
         if len(word) > 15:
@@ -66,7 +70,7 @@ def short_very_long_words(no_hyphens):
     return processed_words    
 
 
-print(short_very_long_words([
+print(shorten_very_long_words([
     'hello',
     'nonbiological',
     'Kay',
@@ -74,7 +78,9 @@ print(short_very_long_words([
     'antidisestablishmentarianism'
 ]))
 
-
+def format_long_word_report(long_words):
+    report = "These words are quite long: "
+    return report + ", ".join(long_words)
 
    
 print("")
