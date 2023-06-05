@@ -22,7 +22,23 @@ def report_long_words(words):
   short_if_longer = short_very_long_words(no_hyphens)
   return format_long_word_report(short_if_longer)
 
-  print("")
+
+def extract_long_words(words):
+  long_words = []
+  for word in words:
+    if len(word) > 10:
+      long_words.append(word)
+    return long_words
 
 
+print(extract_long_words([
+    'hello',
+    'nonbiological',
+    'Kay',
+    'this-is-a-long-word',
+    'antidisestablishmentarianism'
+]))
+
+   
+print("")
 print("Function: report_long_words")
