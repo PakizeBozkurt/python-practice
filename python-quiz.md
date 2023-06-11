@@ -26,3 +26,11 @@ Q3. What data structure does a binary tree degenerate to if it isn't balanced pr
  d) OrderedDict
 
  answer = a
+
+ Q4. What statement about static methods is true?
+ a) Static methods are called static because they always return None.
+ b) Static methods can be bound to either a class or an instance of a class.
+ c) Static methods serve mostly as utility methods or helper methods, since they can't access or modify a class's state.
+ d) Static methods can access and modify the state of a class or an instance of a class.
+
+ answer = c
