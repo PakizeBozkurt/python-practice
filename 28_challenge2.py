@@ -20,7 +20,7 @@ def report_long_words(words):
   #Filter in the words that are 10 characters long
   long_words = extract_long_unhyphenated_words(words)
   #Filter out those that contain hyphens
-#   without_hyphens = reject_hyphenated_words(long_words)
+  #without_hyphens = reject_hyphenated_words(long_words)
   #Map the ones thatover 15 characters to the shortened
   shortened_if_longer = shorten_very_long_words(long_words)
   #Summarise to a string report
