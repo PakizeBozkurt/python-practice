@@ -34,3 +34,14 @@ Q3. What data structure does a binary tree degenerate to if it isn't balanced pr
  d) Static methods can access and modify the state of a class or an instance of a class.
 
  answer = c
+
+ Q5. What are attributes?
+ a) Attributes are long-form version of an if/else statement, used when testing for equality between objects.
+ b) Attributes are a way to hold data or describe a state for a class or an instance of a class.
+ c) Attributes are strings that describe characteristics of a class.
+ d) Function arguments are called "attributes" in the context of class methods and instance methods.
+
+ answer = b
+
+Explanation: Attributes defined under the class, arguments goes under the functions. arguments usually refer as parameter, whereas attributes are the constructor of the class or an instance of a class.
+
