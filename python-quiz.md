@@ -18,3 +18,11 @@ if any([True, False, False, False]) == True:
 >>> 'Yes, there is True'
 
 answer = b
+
+Q3. What data structure does a binary tree degenerate to if it isn't balanced properly?
+ a) linked list
+ b) queue
+ c) set
+ d) OrderedDict
+
+ answer = a
