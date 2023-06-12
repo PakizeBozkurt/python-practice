@@ -2,6 +2,7 @@
 #The most used f-string feature by far is string interpolation. 
 # #All you need to do is wrap the value or variable in curly braces({}) and you're good to go.
 
+from datetime import datetime
 str_val = 'apples'
 num_val = 42
 
@@ -50,3 +51,13 @@ print(f'{str_val!r}')  # 'apples'
 price_val = 6.12658
 
 print(f'{price_val:.2f}')  # 6.13
+
+
+# Date formatting
+#Finally, dates can also be formatted the same way as numbers, using format specifiers.
+#As usual, % Y denotes the full year, % m is the month and %d is the day of the month.
+
+
+date_val = datetime.utcnow()
+
+print(f'{date_val=:%Y-%m-%d}')  # date_val=2021-07-09
