@@ -37,3 +37,16 @@ print(f'{num_val % 2 = }')  # num_val % 2 = 0
 str_val = 'apples'
 
 print(f'{str_val!r}')  # 'apples'
+
+
+# Number formatting
+#Additionally, f-strings can also be used for formatting - hence the f in the name. 
+# #To add formatting to a value you can add a colon (:) followed by a format specifier. 
+# #This can also be combined with the equals sing from before, shall you want to print the name of the variable as well.
+
+#Numbers are a great candidate for this.
+# If, for example, you want to trim a numeric value to two digits after the decimal, you can use the .2f format specifier.
+
+price_val = 6.12658
+
+print(f'{price_val:.2f}')  # 6.13
