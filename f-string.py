@@ -27,3 +27,13 @@ print(f'{str_val=}, {num_val = }')  # str_val='apples', num_val = 42
 num_val = 42
 
 print(f'{num_val % 2 = }')  # num_val % 2 = 0
+
+
+# Printable representation
+#Apart from plain string interpolation, you might want to get the printable representation of a value. 
+# #This is already easy to accomplish using the repr() function. 
+# #f-strings provide a much shorter syntax by appending a !r inside the curly braces.
+
+str_val = 'apples'
+
+print(f'{str_val!r}')  # 'apples'
