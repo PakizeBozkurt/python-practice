@@ -1,3 +1,6 @@
+# Python's f-strings provide a more readable, concise and less error-prone way to format strings than traditional string formatting. 
+# #They are packed with useful features that are sure to come in handy in day-to-day use.
+
 # String Interpolation
 #The most used f-string feature by far is string interpolation. 
 # #All you need to do is wrap the value or variable in curly braces({}) and you're good to go.
