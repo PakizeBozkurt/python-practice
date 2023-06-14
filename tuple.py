@@ -1,3 +1,4 @@
+from collections import Counter
 def hex_to_rgb(hex):
   return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
 hex_to_rgb('FFA501')  # (255, 165, 1)
@@ -19,3 +20,16 @@ digitize(123)  # [1, 2, 3]
 # Converts a number to a list of digits.
 
 #Use map() combined with int on the string representation of n and return a list from the result
+
+from collections import Counter
+
+
+
+def find_parity_outliers(nums):
+  return [
+      x for x in nums
+      if x % 2 != Counter([n % 2 for n in nums]).most_common()[0][0]
+  ]
+
+
+find_parity_outliers([1, 2, 3, 4, 6])  # [1, 3]
