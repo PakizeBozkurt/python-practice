@@ -33,3 +33,9 @@ def find_parity_outliers(nums):
 
 
 find_parity_outliers([1, 2, 3, 4, 6])  # [1, 3]
+
+# Finds the items that are parity outliers in a given list.
+
+#Use collections.Counter with a list comprehension to count even and odd values in the list.
+#Use collections.Counter.most_common() to get the most common parity.
+#Use a list comprehension to find all elements that do not match the most common parity.
